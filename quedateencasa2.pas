@@ -30,6 +30,12 @@ program quedateencasa(Input, Output);
 
        En una segunda version intentare programa que puedas entrar una palabra
        Y este la dibuja en pantalla.
+
+       Que falta:
+       Que valide que la palabra no sea mayor a 7 letras
+       Lectura de las 2 palabras a imprimir en pantalla
+       Llenas matrices de las letras del abecedarios faltantes.
+       Maquetar y declarar numeros
 }
 
 uses crt;
@@ -52,16 +58,21 @@ type
 var
    i, y, inicio, fin, ip : integer;
    pausa : char;
-   mq, mu, me, md, ma, mt, mn, mc, ms : letra; {matrices con las letras a usar}
+
+   {matrices con las letras a usar}
+   ma, mb, mc, md, me, mf, mg, mh, mi, mj, mk, ml, mm : letra;
+   mn, mo, mp, mq, mr, ms, mt, mu, mv, mw, mx, my, mz : letra;
    palabra : string;
 
 {*****************************************************************************}
+{Procedimiento para insertar un caracter en blanco}
 procedure espacio;
 begin
      inicio := inicio + ancho * px + px;
 end;
 
 {*****************************************************************************}
+{Procedimient para hacer un saldo de linea y escribir una segunda palabra}
 procedure salto_linea;
 begin
      inicio := 3;
@@ -99,6 +110,7 @@ begin
 end;
 
 {*****************************************************************************}
+{Imprime una palabra completa}
 procedure imprime_palabra (palabra: string);
 begin
      for ip := 1 to length(palabra) do
@@ -264,6 +276,214 @@ una letra}
      ms[2,1] := 1; ms[3,1] := 1; ms[4,1] := 1; ms[5,1] := 1; ms[1,2] := 1; 
      ms[2,3] := 1; ms[3,3] := 1; ms[4,3] := 1; ms[5,4] := 1; ms[1,5] := 1; 
      ms[2,5] := 1; ms[3,5] := 1; ms[4,5] := 1;
+
+{*****************************************************************************}
+{Letra F}
+     for i := 1 to 5 do
+     begin
+          for y := 1 to 5 do
+          begin
+               mf[i , y] := 0;
+          end;
+     end;
+     mf[2,1] := 1; mf[3,1] := 1; mf[4,1] := 1; mf[5,1] := 1; mf[1,2] := 1; 
+     mf[2,3] := 1; mf[3,3] := 1; mf[4,3] := 1; mf[5,4] := 1; mf[1,5] := 1; 
+     mf[2,5] := 1; mf[3,5] := 1; mf[4,5] := 1;
+
+{*****************************************************************************}
+{Letra G}
+     for i := 1 to 5 do
+     begin
+          for y := 1 to 5 do
+          begin
+               mg[i , y] := 0;
+          end;
+     end;
+     mg[2,1] := 1; mg[3,1] := 1; mg[4,1] := 1; mg[5,1] := 1; mg[1,2] := 1; 
+     mg[2,3] := 1; mg[3,3] := 1; mg[4,3] := 1; mg[5,4] := 1; mg[1,5] := 1; 
+     mg[2,5] := 1; mg[3,5] := 1; mg[4,5] := 1;
+
+{*****************************************************************************}
+{Letra H}
+     for i := 1 to 5 do
+     begin
+          for y := 1 to 5 do
+          begin
+               mh[i , y] := 0;
+          end;
+     end;
+     mh[2,1] := 1; mh[3,1] := 1; mh[4,1] := 1; mh[5,1] := 1; mh[1,2] := 1; 
+     mh[2,3] := 1; mh[3,3] := 1; mh[4,3] := 1; mh[5,4] := 1; mh[1,5] := 1; 
+     mh[2,5] := 1; mh[3,5] := 1; mh[4,5] := 1;
+
+{*****************************************************************************}
+{Letra I}
+     for i := 1 to 5 do
+     begin
+          for y := 1 to 5 do
+          begin
+               mi[i , y] := 0;
+          end;
+     end;
+     mi[2,1] := 1; mi[3,1] := 1; mi[4,1] := 1; mi[5,1] := 1; mi[1,2] := 1; 
+     mi[2,3] := 1; mi[3,3] := 1; mi[4,3] := 1; mi[5,4] := 1; mi[1,5] := 1; 
+     mi[2,5] := 1; mi[3,5] := 1; mi[4,5] := 1;
+
+{*****************************************************************************}
+{Letra J}
+     for i := 1 to 5 do
+     begin
+          for y := 1 to 5 do
+          begin
+               mj[i , y] := 0;
+          end;
+     end;
+     mj[2,1] := 1; mj[3,1] := 1; mj[4,1] := 1; mj[5,1] := 1; mj[1,2] := 1; 
+     mj[2,3] := 1; mj[3,3] := 1; mj[4,3] := 1; mj[5,4] := 1; mj[1,5] := 1; 
+     mj[2,5] := 1; mj[3,5] := 1; mj[4,5] := 1;
+
+{*****************************************************************************}
+{Letra K}
+     for i := 1 to 5 do
+     begin
+          for y := 1 to 5 do
+          begin
+               mk[i , y] := 0;
+          end;
+     end;
+     mk[2,1] := 1; mk[3,1] := 1; mk[4,1] := 1; mk[5,1] := 1; mk[1,2] := 1; 
+     mk[2,3] := 1; mk[3,3] := 1; mk[4,3] := 1; mk[5,4] := 1; mk[1,5] := 1; 
+     mk[2,5] := 1; mk[3,5] := 1; mk[4,5] := 1;
+
+{*****************************************************************************}
+{Letra L}
+     for i := 1 to 5 do
+     begin
+          for y := 1 to 5 do
+          begin
+               ml[i , y] := 0;
+          end;
+     end;
+     ml[2,1] := 1; ml[3,1] := 1; ml[4,1] := 1; ml[5,1] := 1; ml[1,2] := 1; 
+     ml[2,3] := 1; ml[3,3] := 1; ml[4,3] := 1; ml[5,4] := 1; ml[1,5] := 1; 
+     ml[2,5] := 1; ml[3,5] := 1; ml[4,5] := 1;
+
+{*****************************************************************************}
+{Letra M}
+     for i := 1 to 5 do
+     begin
+          for y := 1 to 5 do
+          begin
+               mm[i , y] := 0;
+          end;
+     end;
+     mm[2,1] := 1; mm[3,1] := 1; mm[4,1] := 1; mm[5,1] := 1; mm[1,2] := 1; 
+     mm[2,3] := 1; mm[3,3] := 1; mm[4,3] := 1; mm[5,4] := 1; mm[1,5] := 1; 
+     mm[2,5] := 1; mm[3,5] := 1; mm[4,5] := 1;
+
+{*****************************************************************************}
+{Letra O}
+     for i := 1 to 5 do
+     begin
+          for y := 1 to 5 do
+          begin
+               mo[i , y] := 0;
+          end;
+     end;
+     mo[2,1] := 1; mo[3,1] := 1; mo[4,1] := 1; mo[5,1] := 1; mo[1,2] := 1; 
+     mo[2,3] := 1; mo[3,3] := 1; mo[4,3] := 1; mo[5,4] := 1; mo[1,5] := 1; 
+     mo[2,5] := 1; mo[3,5] := 1; mo[4,5] := 1;
+
+{*****************************************************************************}
+{Letra P}
+     for i := 1 to 5 do
+     begin
+          for y := 1 to 5 do
+          begin
+               mp[i , y] := 0;
+          end;
+     end;
+     mp[2,1] := 1; mp[3,1] := 1; mp[4,1] := 1; mp[5,1] := 1; mp[1,2] := 1; 
+     mp[2,3] := 1; mp[3,3] := 1; mp[4,3] := 1; mp[5,4] := 1; mp[1,5] := 1; 
+     mp[2,5] := 1; mp[3,5] := 1; mp[4,5] := 1;
+
+{*****************************************************************************}
+{Letra R}
+     for i := 1 to 5 do
+     begin
+          for y := 1 to 5 do
+          begin
+               mr[i , y] := 0;
+          end;
+     end;
+     mr[2,1] := 1; mr[3,1] := 1; mr[4,1] := 1; mr[5,1] := 1; mr[1,2] := 1; 
+     mr[2,3] := 1; mr[3,3] := 1; mr[4,3] := 1; mr[5,4] := 1; mr[1,5] := 1; 
+     mr[2,5] := 1; mr[3,5] := 1; mr[4,5] := 1;
+
+{*****************************************************************************}
+{Letra V}
+     for i := 1 to 5 do
+     begin
+          for y := 1 to 5 do
+          begin
+               mv[i , y] := 0;
+          end;
+     end;
+     mv[2,1] := 1; mv[3,1] := 1; mv[4,1] := 1; mv[5,1] := 1; mv[1,2] := 1; 
+     mv[2,3] := 1; mv[3,3] := 1; mv[4,3] := 1; mv[5,4] := 1; mv[1,5] := 1; 
+     mv[2,5] := 1; mv[3,5] := 1; mv[4,5] := 1;
+
+{*****************************************************************************}
+{Letra W}
+     for i := 1 to 5 do
+     begin
+          for y := 1 to 5 do
+          begin
+               mw[i , y] := 0;
+          end;
+     end;
+     mw[2,1] := 1; mw[3,1] := 1; mw[4,1] := 1; mw[5,1] := 1; mw[1,2] := 1; 
+     mw[2,3] := 1; mw[3,3] := 1; mw[4,3] := 1; mw[5,4] := 1; mw[1,5] := 1; 
+     mw[2,5] := 1; mw[3,5] := 1; mw[4,5] := 1;
+
+{*****************************************************************************}
+{Letra X}
+     for i := 1 to 5 do
+     begin
+          for y := 1 to 5 do
+          begin
+               mx[i , y] := 0;
+          end;
+     end;
+     mx[2,1] := 1; mx[3,1] := 1; mx[4,1] := 1; mx[5,1] := 1; mx[1,2] := 1; 
+     mx[2,3] := 1; mx[3,3] := 1; mx[4,3] := 1; mx[5,4] := 1; mx[1,5] := 1; 
+     mx[2,5] := 1; mx[3,5] := 1; mx[4,5] := 1;
+
+{*****************************************************************************}
+{Letra Y}
+     for i := 1 to 5 do
+     begin
+          for y := 1 to 5 do
+          begin
+               my[i , y] := 0;
+          end;
+     end;
+     my[2,1] := 1; my[3,1] := 1; my[4,1] := 1; my[5,1] := 1; my[1,2] := 1; 
+     my[2,3] := 1; my[3,3] := 1; my[4,3] := 1; my[5,4] := 1; my[1,5] := 1; 
+     my[2,5] := 1; my[3,5] := 1; my[4,5] := 1;
+
+{*****************************************************************************}
+{Letra Z}
+     for i := 1 to 5 do
+     begin
+          for y := 1 to 5 do
+          begin
+               mz[i , y] := 0;
+          end;
+     end;
+     mz[2,1] := 1; mz[3,1] := 1; mz[4,1] := 1; mz[5,1] := 1; mz[1,2] := 1; 
+     mz[2,3] := 1; mz[3,3] := 1; mz[4,3] := 1; mz[5,4] := 1; mz[1,5] := 1; 
+     mz[2,5] := 1; mz[3,5] := 1; mz[4,5] := 1;
 
 {*****************************************************************************}
 {Comienza la impresion en pantalla de las letras}
